@@ -4,16 +4,16 @@
 \alias{cor_tc}
 \title{Test-Level and Item-Level Temporal Consistency Correlations}
 \usage{
-cor_tc(tot1, tot2, it1, it2)
+cor_tc(it1, tot1, it2, tot2)
 }
 \arguments{
-\item{tot1}{Total test score at time 1}
-
-\item{tot2}{Total test score at time 1}
-
 \item{it1}{Item scores at time 1}
 
+\item{tot1}{Total test score at time 1}
+
 \item{it2}{Item scores at time 2}
+
+\item{tot2}{Total test score at time 1}
 }
 \value{
 Estimates of item-level and test-level test-retest correlations

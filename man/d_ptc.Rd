@@ -4,9 +4,11 @@
 \alias{d_ptc}
 \title{D Estimate for Personal Temporal Consistency}
 \usage{
-d_ptc(it1, it2)
+d_ptc(id, it1, it2)
 }
 \arguments{
+\item{id}{Columne in a dataframe or matrix containing the subject ID variable}
+
 \item{it1}{Columns in a dataframe or matrix containing the items measured at time 1}
 
 \item{it2}{Columns in a dataframe or matrix containing the items measured at time 2}

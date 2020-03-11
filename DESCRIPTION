@@ -6,11 +6,8 @@ Author: James M. LeBreton <jlebreto@gmail.com>
 Maintainer: James M. LeBreton <jlebreto@gmail.com>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-URL: http://github.com/jlebreto/TemporalConsistency
-BugReports: http://github.com/jlebreto/TemporalConsistency/issues
 Depends: R (>= 3.6) 
 Imports: psych (>= 1.9.12.31),
-         magicfor (>= 0.1.0),
          stats (>= 3.6.3)
 License: GPL-3
 Encoding: UTF-8
@@ -20,3 +17,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: http://github.com/jlebreto/TemporalConsistency
+BugReports: http://github.com/jlebreto/TemporalConsistency/issues

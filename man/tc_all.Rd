@@ -4,16 +4,18 @@
 \alias{tc_all}
 \title{Estimates of Temporal Consistency from DeSimone (2015)}
 \usage{
-tc_all(tot1, tot2, it1, it2)
+tc_all(id, it1, tot1, it2, tot2, printD2 = F)
 }
 \arguments{
-\item{tot1}{Total test score at time 1}
-
-\item{tot2}{Total test score at time 1}
+\item{id}{Case ID variable}
 
 \item{it1}{Item scores at time 1}
 
+\item{tot1}{Total test score at time 1}
+
 \item{it2}{Item scores at time 2}
+
+\item{tot2}{Total test score at time 1}
 }
 \value{
 List of results
