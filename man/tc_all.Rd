@@ -4,7 +4,7 @@
 \alias{tc_all}
 \title{Estimates of Temporal Consistency from DeSimone (2015)}
 \usage{
-tc_all(id, it1, tot1, it2, tot2, printD2 = F)
+tc_all(id, it1, tot1, it2, tot2, printD2 = FALSE)
 }
 \arguments{
 \item{id}{Case ID variable}
@@ -16,6 +16,9 @@ tc_all(id, it1, tot1, it2, tot2, printD2 = F)
 \item{it2}{Item scores at time 2}
 
 \item{tot2}{Total test score at time 1}
+
+\item{printD2}{Logical value indicating whether or not to print the results of the
+d_ptc function (D, D2, & p-value of D2)}
 }
 \value{
 List of results
@@ -36,6 +39,6 @@ t1items <- desimone1[,c(2:6)]
 t1total <- desimone1[,7]
 t2items <- desimone1[,c(8:12)]
 t2total <- desimone1[,13]
-tc_all(id, t1items, t1total, t2items, t2total, printD2=F)
-tc_all(id, t1items, t1total, t2items, t2total, printD2=T)
+tc_all(id, t1items, t1total, t2items, t2total, printD2=FALSE)
+tc_all(id, t1items, t1total, t2items, t2total, printD2=TRUE)
 }

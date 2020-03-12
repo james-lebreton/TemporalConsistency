@@ -27,15 +27,17 @@ d_ptc <- function(id, it1,it2){
   step2 <- t(step1) %*% step1 # transpose of matrix of differences multiplied by matrix of differences
   step3 <- step2 * (1/(nrow(it1)-1)) # multiplying resultant matrix by 1/N-1
   step4 <- solve(step3) # creating dif.xx matrix
-  output <- data.frame(matrix(nrow=nrow(it1),ncol=3))
-  colnames(output) <- c("id","D","D2")
+  output <- data.frame(matrix(nrow=nrow(it1),ncol=4))
+  colnames(output) <- c("id","D","D2","pvalue")
     for (i in 1:nrow(it1)){
       subid <- id[i]
       D2 <- as.matrix(t(step1[i,])) %*% step4 %*% as.matrix(step1[i,])
       D <- sqrt(D2)
+      pvalue <- stats::pchisq(D2,df=ncol(it1),lower.tail=FALSE)
       output[i,1] <- subid
-      output[i,2] <- D
-      output[i,3] <- D2
+      output[i,2] <- round(D,digits=2)
+      output[i,3] <- round(D2,digits=2)
+      output[i,4] <- round(pvalue,digits=3)
     }
   return(output)
   }
