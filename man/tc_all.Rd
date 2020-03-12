@@ -25,3 +25,17 @@ This function estimates test-level and item-level temporal consistency
 using: test-retest correlations, component loadings, square root mean
 residual, and D^2 for personal temporal consistency.
 }
+\details{
+Link to DeSimone(2015): https://journals.sagepub.com/doi/full/10.1177/1094428114553061
+}
+\examples{
+data(desimone1)
+names(desimone1)
+id <- desimone1[,1]
+t1items <- desimone1[,c(2:6)]
+t1total <- desimone1[,7]
+t2items <- desimone1[,c(8:12)]
+t2total <- desimone1[,13]
+tc_all(id, t1items, t1total, t2items, t2total, printD2=F)
+tc_all(id, t1items, t1total, t2items, t2total, printD2=T)
+}

@@ -15,8 +15,17 @@ cl_tc(it1, it2)
 Temporal consistency estimated as the similarity across component loadings
 }
 \description{
-This function estimates item-level temporal consistency
-using component loadings as recommended by DeSimone(2015).
-The input consistes of two data frames containing the focal items
-of interest at time 1 (it1) and time 2 (it2).
+This function estimates the item-level temporal consistency
+  effect size using component loadings as recommended by DeSimone(2015).
+  The input consistes of two data frames containing the focal items
+  of interest at time 1 (it1) and time 2 (it2).
+}
+\details{
+Link to DeSimone(2015): https://journals.sagepub.com/doi/full/10.1177/1094428114553061
+}
+\examples{
+data(desimone1)
+names(desimone1)
+cl_tc(desimone1[,c(2:6)],desimone1[,c(8:12)])
+
 }

@@ -3,6 +3,9 @@
 #' This function estimates test-level and item-level temporal consistency
 #' using: test-retest correlations, component loadings, square root mean
 #' residual, and D^2 for personal temporal consistency.
+#'
+#' Link to DeSimone(2015): https://journals.sagepub.com/doi/full/10.1177/1094428114553061
+#'
 #' @param id Case ID variable
 #' @param tot1 Total test score at time 1
 #' @param tot2 Total test score at time 1
@@ -10,8 +13,18 @@
 #' @param it2 Item scores at time 2
 #' @return List of results
 #' @export
+#' @examples
+#' data(desimone1)
+#' names(desimone1)
+#' id <- desimone1[,1]
+#' t1items <- desimone1[,c(2:6)]
+#' t1total <- desimone1[,7]
+#' t2items <- desimone1[,c(8:12)]
+#' t2total <- desimone1[,13]
+#' tc_all(id, t1items, t1total, t2items, t2total, printD2=F)
+#' tc_all(id, t1items, t1total, t2items, t2total, printD2=T)
 tc_all <- function(id, it1, tot1, it2, tot2, printD2 = F){
-  output1 <- cor_tc(tot1, tot2,it1,it2)
+  output1 <- cor_tc(it1, tot1,it2,tot2)
   output2 <- srmr_tc(it1,it2)
   output3 <- cl_tc(it1,it2)
   if (printD2==T){

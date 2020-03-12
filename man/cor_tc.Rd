@@ -20,6 +20,14 @@ Estimates of item-level and test-level test-retest correlations
 }
 \description{
 This function estimates temporal consistency using p x i x o design in G-Theory
-as recommended by DeSimone(2015). The input consistes of two data frames
-containing the focal items of interest at time 1 (df1) and time 2 (df2).
+  as recommended by DeSimone(2015). The input consistes of two data frames
+  containing the focal items of interest at time 1 (df1) and time 2 (df2).
+}
+\details{
+Link to DeSimone(2015): https://journals.sagepub.com/doi/full/10.1177/1094428114553061
+}
+\examples{
+data(desimone1)
+names(desimone1)
+cor_tc(desimone1[,c(2:6)],desimone1[,7],desimone1[,c(8:12)],desimone1[,13])
 }

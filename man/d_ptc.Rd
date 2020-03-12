@@ -18,10 +18,19 @@ D and D2 values for personal temporal consistency
 }
 \description{
 This function estimates person-level temporal consistency
-by estimating Mahalanobis D and D^2 statistics for personal
-temporal consistency as recommended by DeSimone(2015).
-The D^2 statistic is distributed as a Chi-Square with
-degrees of freedom equal to the number of focal items.
-The input consistes of the focal items measured at
-time 1 (it1) and time 2 (it2).
+  by estimating Mahalanobis D and D^2 statistics for personal
+  temporal consistency as recommended by DeSimone(2015).
+  The D^2 statistic is distributed as a Chi-Square with
+  degrees of freedom equal to the number of focal items.
+  The input consistes of the focal items measured at
+  time 1 (it1) and time 2 (it2).
+}
+\details{
+Link to DeSimone(2015): https://journals.sagepub.com/doi/full/10.1177/1094428114553061
+}
+\examples{
+data(desimone1)
+names(desimone1)
+d_ptc(desimone1[,1], desimone1[,c(2:6)],desimone1[,c(8:12)])
+
 }
