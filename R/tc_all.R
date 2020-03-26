@@ -31,14 +31,14 @@ tc_all <- function(id, it1, tot1, it2, tot2, printD2 = FALSE){
   output3 <- cl_tc(it1,it2)
   if (printD2==TRUE){
     output4 <- d_ptc(id,it1,it2)
-    TemporalConsistency <- list(c(Test.Retest.Correlations = output1,
-                                  Square.Root.Mean.Residual = output2,
-                                  Component.Loading.Similarity = output3,
-                                  Person.Temporal.Consistency = output4))
+    TemporalConsistency <- list(Test.Retest.Correlations = output1,
+                                Square.Root.Mean.Residual = output2,
+                                Component.Loading.Similarity = output3,
+                                Person.Temporal.Consistency = output4)
     return(TemporalConsistency)
   }
-  TemporalConsistency <- list(c(Test.Retest.Correlations = output1,
-                                Square.Root.Mean.Residual = output2,
-                                Component.Loading.Similarity = output3))
+  TemporalConsistency <- list(Test.Retest.Correlations = output1,
+                              Square.Root.Mean.Residual = output2,
+                              Component.Loading.Similarity = output3)
   return(TemporalConsistency)
 }

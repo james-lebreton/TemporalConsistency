@@ -1,7 +1,7 @@
 Package: TemporalConsistency
 Type: Package
 Title: Computes Traditional and New Estimates of Temporal Consistency Per DeSimone(2015)
-Version: 0.1.1
+Version: 0.1.2
 Author: James M. LeBreton <jlebreto@gmail.com>
 Maintainer: James M. LeBreton <jlebreto@gmail.com>
 Description: This package includes functions to compute a number of estimates of temporal consistency 
@@ -9,16 +9,16 @@ Description: This package includes functions to compute a number of estimates of
     test-retest correlations (cor_tc), c) square root mean residual using T1 and T2 item-level
     correlations, and d) person-level temporal consistency estimating using D^2 (d_ptc). All of the 
     statistics may be requested using the tc_all function. 
-Depends: R (>= 3.6) 
-Imports: psych (>= 1.9.12.31),
-         stats (>= 3.6.3)
+Depends: R (>= 4.5) 
+Imports: psych (>= 2.5.3),
+         stats (>= 4.5.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.3.2
 Suggests: 
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-URL: http://github.com/jlebreto/TemporalConsistency
-BugReports: http://github.com/jlebreto/TemporalConsistency/issues
+URL: http://github.com/james-lebreton/TemporalConsistency
+BugReports: http://github.com/james-lebreton/TemporalConsistency/issues
