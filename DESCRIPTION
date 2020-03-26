@@ -1,7 +1,7 @@
 Package: TemporalConsistency
 Type: Package
 Title: Computes Traditional and New Estimates of Temporal Consistency Per DeSimone(2015)
-Version: 0.1.1
+Version: 0.1.0
 Author: James M. LeBreton <jlebreto@gmail.com>
 Maintainer: James M. LeBreton <jlebreto@gmail.com>
 Description: This package includes functions to compute a number of estimates of temporal consistency 
