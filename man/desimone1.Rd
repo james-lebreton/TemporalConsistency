@@ -4,8 +4,7 @@
 \name{desimone1}
 \alias{desimone1}
 \title{Data from DeSimone (2015)'s Example 1}
-\format{
-A data frame with 30 rows and 12 variables:
+\format{A data frame with 30 rows and 12 variables:
 \describe{
   \item{id}{subject id number}
   \item{i11}{responses to item 1 measured at time 1}
@@ -20,8 +19,7 @@ A data frame with 30 rows and 12 variables:
   \item{i42}{responses to item 4 measured at time 2...}
   \item{i52}{responses to item 5 measured at time 2...}
   \item{t2}{total score at time 2 (i.e., unit-weighted composite of i12:52)}
-}
-}
+}}
 \usage{
 desimone1
 }
